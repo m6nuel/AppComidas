@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  margin: 0 3rem;
+  padding: 0 3rem;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, .7);
+  opacity: 0.95;
+  border-radius: 3rem;
+}
+
+.footer h4, .footer h5 {
+  margin: 0;
+  display: flex;
+}

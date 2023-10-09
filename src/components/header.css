@@ -1,0 +1,16 @@
+.header {
+  background-color: rgb(79, 79, 79);
+  height: 4rem;
+  position: fixed;
+  width: 80%;
+  border-radius: 10px;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+
+  -webkit-box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
+  box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
+}

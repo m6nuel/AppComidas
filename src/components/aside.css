@@ -1,0 +1,16 @@
+.aside {
+  position: fixed;
+  height: 50vh;
+  width: 15rem;
+  margin-top: 5rem;
+  /* border: 1px solid #ffffff; */
+  border-radius: 5px;
+
+  -webkit-box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
+  box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
