@@ -1,7 +1,9 @@
-/* eslint-disable react/prop-types */
 import './card.css'
+import { useContext } from 'react'
+import { RecipesContext } from '../context/context'
 
-function Card ({ recetas }) {
+function Card () {
+  const recetas = useContext(RecipesContext)
   return (
     <>
       {
