@@ -5,14 +5,26 @@ import { getRecipes } from '../services/getRecipes'
 export const RecipesContext = createContext()
 
 export function RecipesProviders ({ children }) {
-  const [recipes, setRecipes] = useState([])
+  const [data, setData] = useState({
+    initialState: [],
+    recipes: []
+  })
 
   useEffect(() => {
-    getRecipes().then(data => setRecipes(data))
+    getRecipes()
+      .then(data => setData(prevState => ({
+        ...prevState,
+        initialState: data,
+        recipes: data
+      })))
   }, [])
+
   return (
     <RecipesContext.Provider
-      value={recipes}
+      value={{
+        data,
+        setData
+      }}
     >
       {children}
     </RecipesContext.Provider>
