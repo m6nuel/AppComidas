@@ -1,15 +1,10 @@
 import './card.css'
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { RecipesContext } from '../context/context'
 import cargando from '../mocks/loading.jpg'
 
 function Card () {
-  const { data } = useContext(RecipesContext)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setLoading(false)
-  }, [data])
+  const { data, loading } = useContext(RecipesContext)
 
   return (
     <>
