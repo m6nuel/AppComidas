@@ -13,15 +13,20 @@ export function RecipesProviders ({ children }) {
 
   useEffect(() => {
     setLoading(true)
-    getRecipes()
-      .then(data => setData(prevState => ({
-        ...prevState,
-        initialState: data,
-        recipes: data
-      })))
+    try {
+      getRecipes()
+        .then(data => setData(prevState => ({
+          ...prevState,
+          initialState: data,
+          recipes: data
+        })))
+      setLoading(false)
+    } catch (error) {
+      throw new Error(error)
+    }
     setLoading(false)
   }, [])
-
+  console.log(loading)
   return (
     <RecipesContext.Provider
       value={{
