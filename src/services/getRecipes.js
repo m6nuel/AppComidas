@@ -11,7 +11,7 @@ export const getRecipes = async (name) => {
         return 'No se encontro la receta'
       }
     } catch (error) {
-      throw new Error('Error en la Api externa')
+      throw new Error(error.message)
     }
   }
 
@@ -20,6 +20,6 @@ export const getRecipes = async (name) => {
     const json = await data.json()
     return json
   } catch (error) {
-    throw new Error('Error en la Api externa')
+    throw new Error(error.message)
   }
 }

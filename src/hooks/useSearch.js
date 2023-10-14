@@ -31,14 +31,12 @@ export function useSearch () {
   }, [search])
 
   const getRecipeByName = async (search) => {
+    if (search === '') return
     try {
       setLoading(true)
       const buscado = await getRecipes(search)
       if (buscado.message === 'Recipes not found') {
-        console.log(buscado.message)
-        return {
-          name: 'no se encontro receta'
-        }
+        return
       }
       setData(prevState => ({
         ...prevState,
@@ -48,7 +46,7 @@ export function useSearch () {
       return buscado
     } catch (error) {
       setLoading(false)
-      throw new Error(error)
+      throw new Error(error.message)
     }
   }
 

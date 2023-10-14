@@ -7,8 +7,8 @@ function Header () {
   const { setSearch, search, getRecipeByName, error, handleReset } = useSearch()
 
   const handleChange = (e) => {
-    const search = e.target.value
-    setSearch(search)
+    const rSearch = e.target.value
+    setSearch(rSearch)
   }
 
   const handleSubmit = (e) => {
