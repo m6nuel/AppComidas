@@ -51,6 +51,7 @@ export function useSearch () {
       throw new Error(error)
     }
   }
+
   const handleReset = () => {
     return setData(prevState => ({
       ...prevState,
