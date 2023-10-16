@@ -1,16 +1,65 @@
 .aside {
+  background: #000;
+  display: none;
+  padding: 32px;
   position: fixed;
-  height: 50vh;
-  width: 15rem;
-  margin-top: 5rem;
-  /* border: 1px solid #ffffff; */
-  border-radius: 5px;
+  left: 0;
+  top: 7rem;
+  height: auto;
+  width: 20%;
+  transition: all .5s ease;
+  transition-duration: 2s;
+}
 
-  -webkit-box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
-  box-shadow: 3px -1px 32px 7px rgba(0,0,0,0.75);
-  
+/* .cart img {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+.cart li {
+  border-bottom: 1px solid #444;
+  padding-bottom: 16px;
+}
+
+.cart footer {
   display: flex;
+  gap: 8px;
   justify-content: center;
   align-items: center;
+}
+
+.cart footer button {
+  padding: 8px;
+} */
+
+.buttonf {
+  align-items: center;
+  background: #09f;
+  border-radius: 0px 50px 50px 0px;
+  -moz-border-radius: 0px 50px 50px 0px;
+  -webkit-border-radius: 0px 50px 50px 0px;
+  border: 0px solid #000000;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: 4px;
+  position: absolute;
+  left: 0;
+  top: 7rem;
+  transition: all .5s ease;
+  transition-property: all;
+  transition-duration: 2s;
+  width: 32px;
+  z-index: 99999;
+}
+
+.buttonf:hover {
+  scale: 1.1;
+}
+
+.buttonf ~ input:checked ~ .aside {
+  height: 100%;
+  display: block;
+  height: 20vh;
 }
