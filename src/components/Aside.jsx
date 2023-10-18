@@ -1,8 +1,11 @@
 import { useId } from 'react'
 import IconFilters from './Icons'
 import './aside.css'
+import { SelectDiet } from './SelectDiet'
+
 function Aside () {
   const filt = useId()
+
   return (
     <>
      <label className='buttonf' htmlFor={filt}>
@@ -11,11 +14,11 @@ function Aside () {
       <input id={filt} type='checkbox' hidden />
 
       <div className='aside'>
-        <IconFilters/>
+      <SelectDiet />
       </div>
 
       <div className='aside-esc'>
-        <h2>Filtros</h2>
+        <SelectDiet />
       </div>
     </>
   )

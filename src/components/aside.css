@@ -78,6 +78,9 @@
   .buttonf {
     display: none;
   }
+}
+
+@media screen and (min-width: 500px) {
   .aside {
     display: none;
   }
@@ -85,6 +88,9 @@
 
 @media screen and (max-width: 500px) {
   .aside-esc {
+    display: none;
+  }
+  .aside {
     display: none;
   }
 }

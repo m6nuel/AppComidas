@@ -3,7 +3,7 @@ export const getRecipes = async (name) => {
 
   if (name) {
     try {
-      const data = await fetch(`https://backfood-d7cg.onrender.com/recipes?name=${name}`)
+      const data = await fetch(`https://backfood-nxl1.onrender.com/recipes?name=${name}`)
       const json = await data.json()
       if (json.length > 0) {
         return json
@@ -16,7 +16,7 @@ export const getRecipes = async (name) => {
   }
 
   try {
-    const data = await fetch('https://backfood-d7cg.onrender.com/recipes')
+    const data = await fetch('https://backfood-nxl1.onrender.com/recipes/')
     const json = await data.json()
     return json
   } catch (error) {
