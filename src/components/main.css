@@ -1,7 +1,7 @@
 .main {
   margin: 5rem 0 0 15rem;
   max-width: 60%;
-  display: flex;
+  /* display: flex; */
   padding: 0 0.2rem;
   z-index: 0;
 }
@@ -14,3 +14,16 @@
   padding: 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+    display: contents;
+    margin: 0;
+    top: 7rem;
+    justify-content: center;
+  }
+  .aside-esc {
+    display: none;
+  }
+
+}

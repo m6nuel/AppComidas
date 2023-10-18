@@ -11,7 +11,11 @@ function Aside () {
       <input id={filt} type='checkbox' hidden />
 
       <div className='aside'>
-        <span><IconFilters/> </span>
+        <IconFilters/>
+      </div>
+
+      <div className='aside-esc'>
+        <h2>Filtros</h2>
       </div>
     </>
   )

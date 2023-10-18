@@ -1,14 +1,22 @@
 .aside {
-  background: #000;
-  display: none;
+  background: #898989;
+  display: contents;
   padding: 32px;
   position: fixed;
   left: 0;
   top: 7rem;
-  height: auto;
-  width: 20%;
+  /* height: 50%; */
+  width: 40%;
+  border-radius: 10px;
   transition: all .5s ease;
   transition-duration: 2s;
+}
+
+.aside-esc {
+  /* display: contents; */
+  position: fixed;
+  left: 0;
+  top: 7rem;
 }
 
 /* vamos avanzando */
@@ -46,7 +54,7 @@
   height: 32px;
   justify-content: center;
   padding: 4px;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 7rem;
   transition: all .5s ease;
@@ -65,3 +73,19 @@
   display: block;
   height: 20vh;
 }
+
+@media screen and (min-width: 500px) {
+  .buttonf {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aside-esc {
+    display: none;
+  }
+}
+
